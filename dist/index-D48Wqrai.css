@@ -1,0 +1,334 @@
+body {
+  background-color: #4682b4;
+  color: #f0ffff;
+  display: flex;
+  font-family: Georgia, Times, serif;
+  justify-content: center;
+  padding: 20px;
+  text-transform: uppercase;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.hide {
+  visibility: hidden;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  width: 100vw;
+  padding: 20px;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 300px;
+}
+button {
+  background-color: #87ceeb;
+  border-radius: 5px;
+  color: #000;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+.long-btn {
+  box-shadow: 3px 3px 3px #0ff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 600px;
+}
+
+.delete-btn {
+  box-shadow: 3px 3px 3px #0ff;
+}
+
+.short-btn {
+  box-shadow: 3px 3px 3px #0ff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 60px;
+}
+
+.middle-btn {
+  box-shadow: 3px 3px 3px #0ff;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 300px;
+}
+input {
+  border-radius: 5px;
+  height: 30px;
+  padding: 0 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+label {
+  align-items: center;
+  background-color: #87ceeb;
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #0ff;
+  color: #000;
+  display: flex;
+  height: 30px;
+  justify-content: center;
+  margin-left: 5px;
+  text-align: center;
+}
+a {
+  background-color: #87ceeb;
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #000;
+  font-size: 1rem;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: center;
+}
+
+.long-link {
+  box-shadow: 3px 3px 3px #0ff;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}
+.main-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.chat-container {
+  width: 100%;
+  display: flex;
+  flex: 1 0 80vh;
+
+}
+.dialog-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+}
+
+.user-data {
+  border-bottom: 1px solid white;
+  padding: 5px;
+  flex: 0 0 30px;
+}
+
+.message-history {
+  flex: 1 0 auto;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  align-items: start;
+  padding: 10px;
+  overflow-y: auto;
+  max-height: 70vh;
+}
+
+.message-form {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  padding: 2px;
+  align-items: stretch;
+
+  input {
+    flex-grow: 1;
+    height: 100%;
+  }
+}
+
+.hide-button {
+  display: none;
+}
+
+.action-container {
+  display: flex;
+  align-items: stretch;
+  gap: 10px
+}
+.to-me {
+  justify-content: start;
+}
+
+.from-me {
+  justify-content: end;
+}
+
+.message-row {
+  width: 100%;
+  padding: 5px 0;
+  display: flex;
+}
+
+.unread-message-item {
+  border-top: 1px solid red;
+}
+
+.message-container {
+  border: 1px solid white;
+  background-color: #272424;
+  border-radius: 5px;
+  padding: 5px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 5px;
+}
+
+.message-text {
+  padding: 5px;
+  background-color: #4682b4
+}
+
+.message-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-size: 12px;
+}
+
+.message-status {
+  font-size: 10px;
+  text-transform: Capitalize;
+  margin-right: auto
+}
+
+.button-block {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
+
+  button {
+    font-size: 12px;
+    padding: 3px;
+  }
+}
+.user-list {
+  border: 1px solid #ddd;
+  height: 100%;
+  overflow-y: auto;
+  flex: 0 0 20%;
+  margin: 0;
+  padding: 5px 5px 5px 25px;
+}
+li {
+  padding: 5px;
+  cursor: pointer;
+
+}
+
+li:hover {
+  color: #c1fa98;
+}
+
+li::marker {
+  color: red;
+}
+
+li.green::marker {
+  color: green;
+}
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-item {
+
+}
+
+.unread-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 21px;
+}
+
+
+.main-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+
+    img {
+      height: 30px;
+
+    }
+  }
+}
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  padding: 5px;
+  h1 {
+    margin: 0 auto;
+  }
+}
+dialog {
+  background-color: #0ff;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px #0ff;
+  color: #000;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.dialog-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.dialog-actions button {
+  box-shadow: 3px 3px 3px 3px #0ff;
+}
