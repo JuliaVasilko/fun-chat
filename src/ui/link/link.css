@@ -1,0 +1,19 @@
+a {
+  background-color: #87ceeb;
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #000;
+  font-size: 1rem;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: none;
+  text-align: center;
+}
+
+.long-link {
+  box-shadow: 3px 3px 3px #0ff;
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+}

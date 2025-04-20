@@ -1,0 +1,61 @@
+.to-me {
+  justify-content: start;
+}
+
+.from-me {
+  justify-content: end;
+}
+
+.message-row {
+  width: 100%;
+  padding: 5px 0;
+  display: flex;
+}
+
+.unread-message-item {
+  border-top: 1px solid red;
+}
+
+.message-container {
+  border: 1px solid white;
+  background-color: #272424;
+  border-radius: 5px;
+  padding: 5px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  gap: 5px;
+}
+
+.message-text {
+  padding: 5px;
+  background-color: #4682b4
+}
+
+.message-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-size: 12px;
+}
+
+.message-status {
+  font-size: 10px;
+  text-transform: Capitalize;
+  margin-right: auto
+}
+
+.button-block {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 5px;
+
+  button {
+    font-size: 12px;
+    padding: 3px;
+  }
+}

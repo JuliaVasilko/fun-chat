@@ -1,0 +1,34 @@
+li {
+  padding: 5px;
+  cursor: pointer;
+
+}
+
+li:hover {
+  color: #c1fa98;
+}
+
+li::marker {
+  color: red;
+}
+
+li.green::marker {
+  color: green;
+}
+.content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.user-item {
+
+}
+
+.unread-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 21px;
+}
+
+
